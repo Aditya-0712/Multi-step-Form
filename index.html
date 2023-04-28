@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Step 1</title>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="font.css">
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="circles">
+                <p style="background-color:#bfe2fa; color:black">1</p>
+                <p>2</p>
+                <p>3</p>
+                <p style="margin-right: 0;">4</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <p class="title">Personal info</p>
+            <p class="desc">Please provide your name, email<br>address, and phone number.</p>
+
+            <form name="myform" autocomplete="off" onsubmit="sub() ; return false">
+                <div class="temp" style="margin-top: 0;">
+                    <p class="label">Name</p>
+                    <p class="error">This field is required</p>
+                </div>
+                <input type="text" name="name" placeholder="e.g. Stephen King">
+
+                <div class="temp">
+                    <p class="label">Email Address</p>
+                    <p class="error">This field is required</p>
+                </div>
+                <input type="text" name="email" placeholder="e.g. stephenking@lorem.com">
+
+                <div class="temp">
+                    <p class="label">Phone Number</p>
+                    <p class="error">This field is required</p>
+                </div>
+                <input type="text" name="phno" placeholder="e.g. +1 234 567 890">
+                <input type="submit" style="display: none;">
+            </form>
+        </div>
+
+        <div class="bottombar">
+            <p onclick="sub() ; return false">Next Step</p>
+        </div>
+
+        <!-- __________________________________________DESKTOP VERSION/WINDOWS VERSION______________________________________________ -->
+
+        <div class="pcmain">
+            <div class="leftside">
+                <div class="pcsteps" style="margin-top: 30px;">
+                    <p class="gol" style="background-color:#bfe2fa; color:black">1</p>
+                    <div>
+                        <p>STEP 1</p>
+                        <p>YOUR INFO</p>
+                    </div>
+                </div>
+
+                <div class="pcsteps">
+                    <p class="gol">2</p>
+                    <div>
+                        <p>STEP 2</p>
+                        <p>SELECT PLAN</p>
+                    </div>
+                </div>
+
+                <div class="pcsteps">
+                    <p class="gol">3</p>
+                    <div>
+                        <p>STEP 3</p>
+                        <p>ADD-ONS</p>
+                    </div>
+                </div>
+
+                <div class="pcsteps">
+                    <p class="gol">4</p>
+                    <div>
+                        <p>STEP 4</p>
+                        <p>SUMMARY</p>
+                    </div>
+                </div>
+            </div>
+
+            <form name="pcform" autocomplete="off" onsubmit="pcsub() ; return false">
+                <p class="title">Personal info</p>
+                <p class="desc">Please provide your name, email address, and phone number.</p>
+                <div class="temp" style="margin-top: 0;">
+                    <p class="label">Name</p>
+                    <p class="error">This field is required</p>
+                </div>
+                <input type="text" name="name" placeholder="e.g. Stephen King">
+
+                <div class="temp">
+                    <p class="label">Email Address</p>
+                    <p class="error">This field is required</p>
+                </div>
+                <input type="text" name="email" placeholder="e.g. stephenking@lorem.com">
+
+                <div class="temp">
+                    <p class="label">Phone Number</p>
+                    <p class="error">This field is required</p>
+                </div>
+                <input type="text" name="phno" placeholder="e.g. +1 234 567 890">
+                <input type="submit" value="Next Step">
+            </form>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

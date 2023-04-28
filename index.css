@@ -1,0 +1,303 @@
+body 
+{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:auto;
+    margin:0;
+    font-size: 0;
+    background-color: #edf4fe;
+}
+
+.topbar
+{
+    display: flex;
+    width: 100%;
+    background-image: url(bg-sidebar-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+}
+
+.circles 
+{
+    display:flex;
+    width:fit-content;
+    height:fit-content;
+    margin:30px auto 0px auto;
+}
+
+.circles p 
+{
+    display:flex;
+    width:auto;
+    height: auto;
+    font-size:15px;
+    font-family: sans-serif;
+    color:white;
+    border-radius: 50px;
+    border:1px solid white;
+    padding:8px 13px 8px 13px;
+    margin:0px 15px 0px 0px;
+    font-weight: bold;
+}
+
+.main 
+{
+    display:flex;
+    flex-direction: column;
+    width:340px;
+    height:auto;
+    background-color: white;
+    border-radius: 10px;
+    margin:0px auto 0px auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: relative;
+    bottom:77px;
+}  
+
+.title , .desc
+{
+    display:flex;
+    width: auto;
+    height: auto;
+    font-size:26px;
+    font-family: ubuntu-bold;
+    color:#022959;
+    margin:30px auto 0px 22px;
+}
+
+.desc 
+{
+    font-family: ubuntu-reg;
+    color:#9d9ea3;
+    font-size: 16px;
+    margin:15px auto 0px 22px;
+}
+
+form 
+{
+    display:flex;
+    flex-direction: column;
+    width: fit-content;
+    height:fit-content;
+    margin:25px auto 30px 22px;
+}
+
+input[type="text"]
+{
+    display:flex;
+    width:270px;
+    padding-left: 15px;
+    height:30px;
+    border-radius: 5px;
+    margin:5px auto 0px 0px;
+    border:1px solid rgba(0, 0, 0, 0.15);
+    font-family: ubuntu-bold;
+    color:#022959;
+}
+
+input[type="text"]:focus
+{
+    outline: 1px solid blueviolet;
+}
+
+input[type="text"]::placeholder
+{
+    font-family: ubuntu-med;
+    color:rgba(0, 0, 0, 0.37);
+}
+
+.temp 
+{
+    display: flex;
+    width:285px;
+    height: auto;
+    margin:15px auto 0px 0px;
+}
+
+.label , .error
+{
+    display:flex;
+    width: auto;
+    height: auto;
+    font-size:13px;
+    color:#022959;
+    font-family: ubuntu-med;
+    margin:0px auto 0px 0px;
+}
+
+.error 
+{
+    display: none;
+    color:red;
+    margin:0px 0px 0px auto;
+}
+
+.bottombar 
+{
+    display:flex;
+    width:100%;
+    height:auto;
+    margin:0;
+    position: absolute;
+    bottom:0;
+    background-color: white;
+}
+
+.bottombar p 
+{
+    display: flex;
+    width: auto;
+    height: auto;
+    font-family: ubuntu-reg;
+    font-size: 15px;
+    color:white;
+    background-color: #022959;
+    padding: 10px;
+    margin:15px 15px 15px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pcmain
+{
+    display: none;
+}
+
+@media screen and (min-width:800px)
+{
+    .topbar , .main , .bottombar
+    {
+        display: none;
+    }
+
+    .pcmain
+    {
+        display: flex;
+        width:700px;
+        height:430px;
+        margin:60px auto 0px auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+    .leftside 
+    {
+        display:flex;
+        flex-direction: column;
+        width:200px;
+        height:410px;
+        margin:auto 80px auto 10px;
+        background-image: url(bg-sidebar-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; 
+    }
+
+    .pcsteps
+    {
+        display:flex;
+        width:fit-content;
+        height: 29.32px;
+        margin:20px auto 0px 20px;
+    }
+
+    .gol 
+    {
+        display:flex;
+        width: auto;
+        height: auto;
+        font-size: 11px;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 7px 11px 0px 11px;
+        border-radius: 50px;
+        border:1px solid white;
+        color:white;
+        margin:0;
+    }
+
+    .pcsteps div 
+    {
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+        height: 100%;
+        margin:0px 0px 0px 15px;
+    }
+
+    .pcsteps div p:nth-child(1) , .pcsteps div p:nth-child(2)
+    {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin:0px auto 0px 0px;
+        font-size: 9px;
+        font-family: ubuntu-reg;
+        color:rgba(255, 255, 255, 0.5);
+        font-weight: lighter;
+    }
+
+    .pcsteps div p:nth-child(2)
+    {
+        margin:auto 0px 0px 0px;
+        font-size: 12px;
+        font-family: ubuntu-med;
+        letter-spacing: 0;
+        color:white;
+    }
+
+    form 
+    {
+        margin:0px auto auto 0px;
+    }
+
+    .title 
+    {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+
+    .desc 
+    {
+        margin-left: 0;
+        margin-top: 5px;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    input[type="text"]
+    {
+        width: 310px;
+    }
+
+    input[type="submit"]
+    {
+        display: flex;
+        width: auto;
+        height: auto;
+        font-family: ubuntu-reg;
+        font-size: 14px;
+        color:white;
+        background-color: #022959;
+        padding: 10px;
+        margin:55px 0px 0px auto;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+
+    input[type="submit"]:hover
+    {
+        background-color: #174a8b;
+    }
+
+    .temp 
+    {
+        width:328.33px;
+    }
+}

@@ -1,0 +1,427 @@
+body 
+{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:auto;
+    margin:0;
+    font-size: 0;
+    background-color: #edf4fe;
+}
+
+.topbar
+{
+    display: flex;
+    width: 100%;
+    background-image: url(bg-sidebar-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+}
+
+.circles 
+{
+    display:flex;
+    width:fit-content;
+    height:fit-content;
+    margin:30px auto 0px auto;
+}
+
+.circles p 
+{
+    display:flex;
+    width:auto;
+    height: auto;
+    font-size:15px;
+    font-family: sans-serif;
+    color:white;
+    border-radius: 50px;
+    border:1px solid white;
+    padding:8px 13px 8px 13px;
+    margin:0px 15px 0px 0px;
+    font-weight: bold;
+}
+
+.main 
+{
+    display:flex;
+    flex-direction: column;
+    width:340px;
+    height:auto;
+    background-color: white;
+    border-radius: 10px;
+    margin:0px auto 0px auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: relative;
+    bottom:77px;
+}  
+
+.title , .desc
+{
+    display:flex;
+    width: auto;
+    height: auto;
+    font-size:26px;
+    font-family: ubuntu-bold;
+    color:#022959;
+    margin:30px auto 0px 22px;
+}
+
+.desc 
+{
+    font-family: ubuntu-reg;
+    color:#9d9ea3;
+    font-size: 16px;
+    margin:15px auto 0px 22px;
+}
+
+.bottombar 
+{
+    display:flex;
+    width:100%;
+    height:auto;
+    margin:0;
+    position: fixed;
+    z-index: 1;
+    bottom:0;
+    background-color: white;
+}
+
+.bottombar p:nth-child(2) , .bottombar p:nth-child(1)
+{
+    display: flex;
+    width: auto;
+    height: auto;
+    font-family: ubuntu-reg;
+    font-size: 15px;
+    color:white;
+    background-color: #022959;
+    padding: 10px;
+    margin:15px 15px 15px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottombar p:nth-child(1)
+{
+    color:rgba(0, 0, 0, 0.5);
+    padding: 0;
+    background-color: transparent;
+    margin:auto auto auto 20px;
+    font-weight: bold;
+}
+
+.options 
+{
+    display:flex;
+    width:266px;
+    height: auto;
+    border-radius: 5px;
+    border:1px solid rgba(0, 0, 0, 0.3);
+    margin:10px auto 0px auto;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.options img
+{
+    margin-bottom: auto;
+}
+
+.options div 
+{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height:auto;
+    margin:0px auto 0px 10px; 
+}
+
+.options div p:nth-child(1) , .options div p:nth-child(2) , .options div p:nth-child(3)
+{
+    display: flex;
+    font-family: ubuntu-med;
+    font-size:18px;
+    color:#022959;
+    margin:0px auto 0px 0px;
+}
+
+.options div p:nth-child(2)
+{
+    color:rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.options div p:nth-child(3)
+{
+    display: none;
+    font-family: ubuntu-reg;
+    color:#022959;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.modes , .modeon
+{
+    display:flex;
+    width: fit-content;
+    height: auto;
+    margin:20px auto 30px auto;
+    padding:15px 50px 15px 50px;
+    background-color: #f8f9fe;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.modes p:nth-child(1) , .modes p:nth-child(3) , .modeon p:nth-child(1) , .modeon p:nth-child(3)
+{
+    display: flex;
+    font-family: ubuntu-med;
+    font-size:17px;
+    margin:0px auto 0px 0px;
+    transition: 0.5s;
+}
+
+.modeon p:nth-child(1)
+{
+    color:rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.modes p:nth-child(3)
+{
+    color:rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.modeon p:nth-child(3)
+{
+    color: #022959;
+    transition: 0.5s;
+}
+
+.modes .switch , .modeon .switch
+{
+    display:flex;
+    width:40px;
+    height: 20px;
+    background-color: #022959;
+    border-radius: 50px;
+    margin:auto 20px auto 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.modes .switch div , .modeon .switch div 
+{
+    display:flex;
+    width:12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50px;
+    margin:auto auto auto 4px;
+    transition: 0.5s;
+}
+
+.modeon .switch div 
+{
+    margin:auto 4px auto auto;
+    transition: 0.5s;
+}
+
+.pcmain
+{
+    display: none;
+}
+
+@media screen and (min-width:800px)
+{
+    .topbar , .main , .bottombar
+    {
+        display: none;
+    }
+
+    .pcmain
+    {
+        display: flex;
+        width:700px;
+        height:430px;
+        margin:60px auto 0px auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+    .leftside 
+    {
+        display:flex;
+        flex-direction: column;
+        width:200px;
+        height:410px;
+        margin:auto 0px auto 10px;
+        background-image: url(bg-sidebar-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; 
+    }
+
+    .pcsteps
+    {
+        display:flex;
+        width:fit-content;
+        height: 29.32px;
+        margin:20px auto 0px 20px;
+    }
+
+    .gol 
+    {
+        display:flex;
+        width: auto;
+        height: auto;
+        font-size: 11px;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 7px 11px 0px 11px;
+        border-radius: 50px;
+        border:1px solid white;
+        color:white;
+        margin:0;
+    }
+
+    .pcsteps div 
+    {
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+        height: 100%;
+        margin:0px 0px 0px 15px;
+    }
+
+    .pcsteps div p:nth-child(1) , .pcsteps div p:nth-child(2)
+    {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin:0px auto 0px 0px;
+        font-size: 9px;
+        font-family: ubuntu-reg;
+        color:rgba(255, 255, 255, 0.5);
+        font-weight: lighter;
+    }
+
+    .pcsteps div p:nth-child(2)
+    {
+        margin:auto 0px 0px 0px;
+        font-size: 12px;
+        font-family: ubuntu-med;
+        letter-spacing: 0;
+        color:white;
+    }
+
+    .rightside
+    {
+        display: flex;
+        width:470px;
+        height: 100%;
+        margin:0px auto 0px 0px;
+        flex-direction: column;
+    }
+
+    .title 
+    {
+        margin:50px auto 0px 70px;
+    }
+
+    .desc 
+    {
+        font-size: 13px;
+        margin:5px auto 0px 70px;
+    }
+
+    .row 
+    {
+        display: flex;
+        margin: 0px auto 0px 70px;
+        width: fit-content;
+        height: auto;
+    }
+
+    .options
+    {
+        width: 80px;
+        flex-direction: column;
+        border:1px solid rgba(0, 0, 0, 0.15);
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+
+    .options img 
+    {
+        width: 30px;
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    .options div 
+    {
+        margin-left: 0;
+    }
+
+    .options div p:nth-child(1)
+    {
+        font-size: 13px;
+        margin:25px auto 0px 0px;
+    }
+
+    .options div p:nth-child(2) , .options div p:nth-child(3)
+    {
+        font-size: 11px;
+    }
+
+    .modes , .modeon
+    {
+        padding: 10px 92px 10px 93px;
+        margin-left:70px;
+    }
+
+    .modes p:nth-child(1) , .modes p:nth-child(3) , .modeon p:nth-child(1) , .modeon p:nth-child(3)
+    {
+        font-size: 13px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .pcbottom 
+    {
+        display:flex;
+        width:354px;
+        height:auto;
+        margin:auto auto 10px 70px;
+    }
+
+    .pcbottom p:nth-child(2) , .pcbottom p:nth-child(1)
+    {
+        display: flex;
+        width: auto;
+        height: auto;
+        font-family: ubuntu-reg;
+        font-size: 11px;
+        color:white;
+        background-color: #022959;
+        padding: 10px 15px 10px 15px;
+        margin:15px 0px 15px auto;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .pcbottom p:nth-child(1)
+    {
+        color:rgba(0, 0, 0, 0.5);
+        padding: 0;
+        background-color: transparent;
+        margin:auto auto auto 0px;
+        font-weight: bold;
+    }
+}

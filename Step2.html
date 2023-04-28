@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Step 2</title>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="Step2.css">
+        <link rel="stylesheet" href="font.css">
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="circles">
+                <p>1</p>
+                <p style="background-color:#bfe2fa; color:black">2</p>
+                <p>3</p>
+                <p style="margin-right: 0;">4</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <p class="title">Select Your Plan</p>
+            <p class="desc">You have the option of monthly or<br>yearly billing.</p>
+
+            <div class="options" style="margin-top: 20px;" onclick="selectA()">
+                <img src="icon-arcade.svg">
+                <div>
+                    <p>Arcade</p>
+                    <p>$9/mo</p>
+                    <p>2 months free</p>
+                </div>
+            </div>
+
+            <div class="options" onclick="selectB()">
+                <img src="icon-advanced.svg">
+                <div>
+                    <p>Advanced</p>
+                    <p>$12/mo</p>
+                    <p>2 months free</p>
+                </div>
+            </div>
+
+            <div class="options" onclick="selectC()">
+                <img src="icon-pro.svg">
+                <div>
+                    <p>Pro</p>
+                    <p>$15/mo</p>
+                    <p>2 months free</p>
+                </div>
+            </div>
+
+            <div class="modes" id="modes">
+                <p>Monthly</p>
+                <div class="switch" id="switch">
+                    <div></div>
+                </div>
+                <p>Yearly</p>
+            </div>
+        </div>
+
+        <div class="bottombar">
+            <p>Go Back</p>
+            <p>Next Step</p>
+        </div>
+
+        <!-- __________________________________________DESKTOP VERSION/WINDOWS VERSION______________________________________________ -->
+
+        <div class="pcmain">
+            <div class="leftside">
+                <div class="pcsteps" style="margin-top: 30px;">
+                    <p class="gol">1</p>
+                    <div>
+                        <p>STEP 1</p>
+                        <p>YOUR INFO</p>
+                    </div>
+                </div>
+
+                <div class="pcsteps">
+                    <p class="gol" style="background-color:#bfe2fa; color:black;">2</p>
+                    <div>
+                        <p>STEP 2</p>
+                        <p>SELECT PLAN</p>
+                    </div>
+                </div>
+
+                <div class="pcsteps">
+                    <p class="gol">3</p>
+                    <div>
+                        <p>STEP 3</p>
+                        <p>ADD-ONS</p>
+                    </div>
+                </div>
+
+                <div class="pcsteps">
+                    <p class="gol">4</p>
+                    <div>
+                        <p>STEP 4</p>
+                        <p>SUMMARY</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightside">
+                <p class="title">Select Your Plan</p>
+                <p class="desc">You have the option of monthly or yearly billing.</p>
+
+                <div class="row">
+                    <div class="options" onclick="selectD()">
+                        <img src="icon-arcade.svg">
+                        <div>
+                            <p>Arcade</p>
+                            <p>$9/mo</p>
+                            <p>2 months free</p>
+                        </div>
+                    </div>
+        
+                    <div class="options" onclick="selectE()">
+                        <img src="icon-advanced.svg">
+                        <div>
+                            <p>Advanced</p>
+                            <p>$12/mo</p>
+                            <p>2 months free</p>
+                        </div>
+                    </div>
+        
+                    <div class="options" onclick="selectF()">
+                        <img src="icon-pro.svg">
+                        <div>
+                            <p>Pro</p>
+                            <p>$15/mo</p>
+                            <p>2 months free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modes" id="pcmodes">
+                    <p>Monthly</p>
+                    <div class="switch" id="pcswitch">
+                        <div></div>
+                    </div>
+                    <p>Yearly</p>
+                </div>
+                <div class="pcbottom">
+                    <p>Go Back</p>
+                    <p>Next Step</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="Step2.js"></script>
+    </body>
+</html>
