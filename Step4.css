@@ -1,0 +1,405 @@
+body 
+{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:auto;
+    margin:0;
+    font-size: 0;
+    background-color: #edf4fe;
+}
+
+.topbar
+{
+    display: flex;
+    width: 100%;
+    background-image: url(bg-sidebar-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+}
+
+.circles 
+{
+    display:flex;
+    width:fit-content;
+    height:fit-content;
+    margin:30px auto 0px auto;
+}
+
+.circles p 
+{
+    display:flex;
+    width:auto;
+    height: auto;
+    font-size:15px;
+    font-family: sans-serif;
+    color:white;
+    border-radius: 50px;
+    border:1px solid white;
+    padding:8px 13px 8px 13px;
+    margin:0px 15px 0px 0px;
+    font-weight: bold;
+}
+
+.main 
+{
+    display:flex;
+    flex-direction: column;
+    width:340px;
+    height:auto;
+    background-color: white;
+    border-radius: 10px;
+    margin:0px auto 0px auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: relative;
+    bottom:77px;
+}  
+
+.title , .desc
+{
+    display:flex;
+    width: auto;
+    height: auto;
+    font-size:26px;
+    font-family: ubuntu-bold;
+    color:#022959;
+    margin:30px auto 0px 22px;
+}
+
+.desc 
+{
+    font-family: ubuntu-reg;
+    color:#9d9ea3;
+    font-size: 16px;
+    margin:15px auto 0px 22px;
+}
+
+.bottombar 
+{
+    display:flex;
+    width:100%;
+    height:auto;
+    margin:0;
+    position: fixed;
+    z-index: 1;
+    bottom:0;
+    background-color: white;
+}
+
+.bottombar p:nth-child(2) , .bottombar p:nth-child(1)
+{
+    display: flex;
+    width: auto;
+    height: auto;
+    font-family: ubuntu-reg;
+    font-size: 15px;
+    color:white;
+    background-color: #022959;
+    padding: 10px;
+    margin:15px 15px 15px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottombar p:nth-child(1)
+{
+    color:rgba(0, 0, 0, 0.5);
+    padding: 0;
+    background-color: transparent;
+    margin:auto auto auto 20px;
+    font-weight: bold;
+}
+
+.billing 
+{
+    display:flex;
+    flex-direction: column;
+    margin:20px 22px 0px 22px;
+    width:auto;
+    height:auto;
+    padding: 15px;
+    background-color: #edf4fe;
+    border-radius: 5px;
+}
+
+.package
+{
+    display:flex;
+    font-family: ubuntu-med;
+    color:#022959;
+    font-size: 16px;
+    margin:0px auto 0px 0px;
+}
+
+.rate
+{
+    display:flex;
+    width:100%;
+    height: auto;
+    margin:3px 0px 0px 0px;
+}
+
+.rate p:nth-child(1) , .rate p:nth-child(2)
+{
+    display: flex;
+    margin:0px auto 0px 0px;
+    font-family: ubuntu-reg;
+    font-size:14px;
+    color:rgb(0,0,0,0.4);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.rate p:nth-child(2)
+{
+    margin:0px 0px 0px auto;
+    color:darkblue;
+    text-decoration: none;
+    cursor: default;
+    font-weight: bolder;
+}
+
+.billing hr 
+{
+    margin:15px auto 0px auto;
+    width:260px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.additional 
+{
+    display:flex;
+    flex-direction: column;
+    width:auto;
+    height: auto;
+    margin:10px 0px 0px 0px;
+}
+
+.additional div 
+{
+    display: flex;
+    width:100%;
+    height: auto;
+    margin:13px 0px 0px 0px;
+}
+
+.additional div p:nth-child(1) , .additional div p:nth-child(2)
+{
+    display: flex;
+    font-family: ubuntu-reg;
+    font-size:14px;
+    color:rgba(0,0,0,0.4);
+    margin:0px auto 0px 0px;
+}
+
+.additional div p:nth-child(2)
+{
+    color:darkblue;
+    margin:0px 0px 0px auto;
+}
+
+.final 
+{
+    display:flex;
+    width: auto;
+    height: auto;
+    margin:30px 22px 30px 22px;
+    padding: 0px 15px 0px 15px;
+}
+
+.final p:nth-child(1) , .final p:nth-child(2)
+{
+    display:flex;
+    font-family: ubuntu-reg;
+    color:rgba(0,0,0,0.4);
+    font-size: 15px;
+    margin:0px auto 0px 0px;
+}
+
+.final p:nth-child(2)
+{
+    color:purple;
+    font-weight: bold;
+    margin:0px 0px 0px auto;
+}
+
+.pcmain
+{
+    display: none;
+}
+
+@media screen and (min-width:800px)
+{
+    .topbar , .main , .bottombar
+    {
+        display: none;
+    }
+
+    .pcmain
+    {
+        display: flex;
+        width:700px;
+        height:430px;
+        margin:60px auto 0px auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+
+    .leftside 
+    {
+        display:flex;
+        flex-direction: column;
+        width:200px;
+        height:410px;
+        margin:auto 0px auto 10px;
+        background-image: url(bg-sidebar-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; 
+    }
+
+    .pcsteps
+    {
+        display:flex;
+        width:fit-content;
+        height: 29.32px;
+        margin:20px auto 0px 20px;
+    }
+
+    .gol 
+    {
+        display:flex;
+        width: auto;
+        height: auto;
+        font-size: 11px;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 7px 11px 0px 11px;
+        border-radius: 50px;
+        border:1px solid white;
+        color:white;
+        margin:0;
+    }
+
+    .pcsteps div 
+    {
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+        height: 100%;
+        margin:0px 0px 0px 15px;
+    }
+
+    .pcsteps div p:nth-child(1) , .pcsteps div p:nth-child(2)
+    {
+        display: flex;
+        width: auto;
+        height: auto;
+        margin:0px auto 0px 0px;
+        font-size: 9px;
+        font-family: ubuntu-reg;
+        color:rgba(255, 255, 255, 0.5);
+        font-weight: lighter;
+    }
+
+    .pcsteps div p:nth-child(2)
+    {
+        margin:auto 0px 0px 0px;
+        font-size: 12px;
+        font-family: ubuntu-med;
+        letter-spacing: 0;
+        color:white;
+    }
+
+    .rightside 
+    {
+        display:flex;
+        flex-direction: column;
+        width: 480px;
+        height: 100%;
+    }
+
+    .title 
+    {
+        font-size: 25px;
+        margin:50px auto 0px 70px;
+    }
+
+    .desc 
+    {
+        font-size:13px;
+        margin:10px auto 0px 70px;
+    }
+
+    .billing 
+    {
+        margin-left: 70px;
+        margin-right: 60px;
+    }
+
+    .billing hr 
+    {
+        width: 320px;
+    }
+
+    .package
+    {
+        font-size: 14px;
+    }
+
+    .rate p:nth-child(1) , .rate p:nth-child(2)
+    {
+        font-size: 13px;
+    }
+
+    .additional div p:nth-child(1) , .additional div p:nth-child(2)
+    {
+        font-size: 13px;
+    }
+
+    .final 
+    {
+        margin-left: 70px;
+        margin-right: 60px;
+    }
+
+    .final p:nth-child(1) , .final p:nth-child(2)
+    {
+        font-size: 14px;
+    }
+
+    .pcbottom 
+    {
+        display:flex;
+        width:354px;
+        height:auto;
+        margin:auto auto 10px 70px;
+    }
+
+    .pcbottom p:nth-child(2) , .pcbottom p:nth-child(1)
+    {
+        display: flex;
+        width: auto;
+        height: auto;
+        font-family: ubuntu-reg;
+        font-size: 11px;
+        color:white;
+        background-color: #022959;
+        padding: 10px 15px 10px 15px;
+        margin:15px 0px 15px auto;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .pcbottom p:nth-child(1)
+    {
+        color:rgba(0, 0, 0, 0.5);
+        padding: 0;
+        background-color: transparent;
+        margin:auto auto auto 0px;
+        font-weight: bold;
+    }
+}
