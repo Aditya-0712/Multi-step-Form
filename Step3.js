@@ -54,3 +54,57 @@ checkbox[2].onclick = function()
         checkbox[2].style.border = "1px solid rgba(0,0,0,0.15)";
     }
 }
+
+checkbox[3].onclick = function()
+{
+    if (checkbox[3].style.backgroundColor == "white")
+    {
+        checkbox[3].style.backgroundColor = "#ecf3fd";
+        tick[3].style.fill = "blue";
+        tick[3].style.border = "none";
+        checkbox[3].style.border = "1px solid blue";
+    }
+    else 
+    {
+        checkbox[3].style.backgroundColor = "white";
+        tick[3].style.fill = "white";
+        tick[3].style.border = "1px solid rgba(0,0,0,0.15)";
+        checkbox[3].style.border = "1px solid rgba(0,0,0,0.15)";
+    }
+}
+
+checkbox[4].onclick = function()
+{
+    if (checkbox[4].style.backgroundColor == "white")
+    {
+        checkbox[4].style.backgroundColor = "#ecf3fd";
+        tick[4].style.fill = "blue";
+        tick[4].style.border = "none";
+        checkbox[4].style.border = "1px solid blue";
+    }
+    else 
+    {
+        checkbox[4].style.backgroundColor = "white";
+        tick[4].style.fill = "white";
+        tick[4].style.border = "1px solid rgba(0,0,0,0.15)";
+        checkbox[4].style.border = "1px solid rgba(0,0,0,0.15)";
+    }
+}
+
+checkbox[5].onclick = function()
+{
+    if (checkbox[5].style.backgroundColor == "white")
+    {
+        checkbox[5].style.backgroundColor = "#ecf3fd";
+        tick[5].style.fill = "blue";
+        tick[5].style.border = "none";
+        checkbox[5].style.border = "1px solid blue";
+    }
+    else 
+    {
+        checkbox[5].style.backgroundColor = "white";
+        tick[5].style.fill = "white";
+        tick[5].style.border = "1px solid rgba(0,0,0,0.15)";
+        checkbox[5].style.border = "1px solid rgba(0,0,0,0.15)";
+    }
+}
