@@ -3,8 +3,8 @@
     <head>
         <title>Step 3</title>
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
-        <link rel="stylesheet" href="Step3.css">
-        <link rel="stylesheet" href="font.css">
+        <link rel="stylesheet" href="/Step3.css">
+        <link rel="stylesheet" href="/font.css">
     </head>
     <body>
         <div class="topbar">
@@ -56,8 +56,8 @@
         </div>
 
         <div class="bottombar">
-            <p>Go back</p>
-            <p>Next Step</p>
+            <p onclick="goback()">Go back</p>
+            <p onclick="next() ; return false">Next Step</p>
         </div>
 
         <!-- __________________________________________DESKTOP VERSION/WINDOWS VERSION______________________________________________ -->
@@ -135,12 +135,12 @@
                 </div>
 
                 <div class="pcbottom">
-                    <p>Go Back</p>
-                    <p>Next Step</p>
+                    <p onclick="goback()">Go Back</p>
+                    <p onclick="pcnext() ; return false">Next Step</p>
                 </div>
             </div>
         </div>
 
-        <script src="Step3.js"></script>
+        <script src="/Step3.js"></script>
     </body>
 </html>

@@ -3,8 +3,8 @@
     <head>
         <title>Step 1</title>
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
-        <link rel="stylesheet" href="Step4.css">
-        <link rel="stylesheet" href="font.css">
+        <link rel="stylesheet" href="/Step4.css">
+        <link rel="stylesheet" href="/font.css">
     </head>
     <body>
         <div class="topbar">
@@ -21,32 +21,32 @@
             <p class="desc">Double-check everything looks OK<br>before confirming.</p>
 
             <div class="billing">
-                <p class="package">Arcade (monthly)</p>
+                <p class="package" id="mobpack">Arcade (monthly)</p>
                 <div class="rate">
-                    <p>Change</p>
-                    <p>$9/mo</p>
+                    <p onclick="change()">Change</p>
+                    <p id="mobrate">$9/mo</p>
                 </div>
                 <hr>
-                <div class="additional">
-                    <div>
+                <div class="additional" id="mobadditional">
+                    <!-- <div>
                         <p>Online service</p>
                         <p>+$1/mo</p>
                     </div>
                     <div>
                         <p>Larger storage</p>
                         <p>+$2/mo</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
-            <div class="final">
+            <div class="final" id="mobfinal">
                 <p>Total (per month)</p>
                 <p>+$12/mo</p>
             </div>
         </div>
 
         <div class="bottombar">
-            <p>Go back</p>
+            <p onclick="goback()">Go back</p>
             <p>Confirm</p>
         </div>
 
@@ -92,35 +92,35 @@
                 <p class="desc">Double-check everything looks OK before confirming.</p>
 
                 <div class="billing">
-                    <p class="package">Arcade (monthly)</p>
+                    <p class="package" id="pcpack">Arcade (monthly)</p>
                     <div class="rate">
-                        <p>Change</p>
-                        <p>$9/mo</p>
+                        <p onclick="change()">Change</p>
+                        <p id="pcrate">$9/mo</p>
                     </div>
                     <hr>
-                    <div class="additional">
-                        <div>
+                    <div class="additional" id="pcadditional">
+                        <!-- <div>
                             <p>Online service</p>
                             <p>+$1/mo</p>
                         </div>
                         <div>
                             <p>Larger storage</p>
                             <p>+$2/mo</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
-                <div class="final">
+                <div class="final" id="pcfinal">
                     <p>Total (per month)</p>
                     <p>+$12/mo</p>
                 </div>
                 <div class="pcbottom">
-                    <p>Go Back</p>
+                    <p onclick="goback()">Go Back</p>
                     <p>Confirm</p>
                 </div>
             </div>
         </div>
 
-        <script src="Step4.js"></script>
+        <script src="/Step4.js"></script>
     </body>
 </html>

@@ -3,8 +3,8 @@
     <head>
         <title>Step 2</title>
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
-        <link rel="stylesheet" href="Step2.css">
-        <link rel="stylesheet" href="font.css">
+        <link rel="stylesheet" href="/Step2.css">
+        <link rel="stylesheet" href="/font.css">
     </head>
     <body>
         <div class="topbar">
@@ -20,8 +20,8 @@
             <p class="title">Select Your Plan</p>
             <p class="desc">You have the option of monthly or<br>yearly billing.</p>
 
-            <div class="options" style="margin-top: 20px;" onclick="selectA()">
-                <img src="icon-arcade.svg">
+            <div class="options" style="margin-top: 20px; background-color: #ecf4fc; border: 1px solid purple" onclick="selectA()">
+                <img src="/icon-arcade.svg">
                 <div>
                     <p>Arcade</p>
                     <p>$9/mo</p>
@@ -29,8 +29,8 @@
                 </div>
             </div>
 
-            <div class="options" onclick="selectB()">
-                <img src="icon-advanced.svg">
+            <div class="options" onclick="selectB()" style="background-color: transparent;">
+                <img src="/icon-advanced.svg">
                 <div>
                     <p>Advanced</p>
                     <p>$12/mo</p>
@@ -38,8 +38,8 @@
                 </div>
             </div>
 
-            <div class="options" onclick="selectC()">
-                <img src="icon-pro.svg">
+            <div class="options" onclick="selectC()" style="background-color: transparent;">
+                <img src="/icon-pro.svg">
                 <div>
                     <p>Pro</p>
                     <p>$15/mo</p>
@@ -57,8 +57,8 @@
         </div>
 
         <div class="bottombar">
-            <p>Go Back</p>
-            <p>Next Step</p>
+            <p onclick="goback()">Go Back</p>
+            <p onclick="next() ; return false">Next Step</p>
         </div>
 
         <!-- __________________________________________DESKTOP VERSION/WINDOWS VERSION______________________________________________ -->
@@ -103,8 +103,8 @@
                 <p class="desc">You have the option of monthly or yearly billing.</p>
 
                 <div class="row">
-                    <div class="options" onclick="selectD()">
-                        <img src="icon-arcade.svg">
+                    <div class="options" onclick="selectD()" style="background-color: #ecf4fc; border: 1px solid purple;">
+                        <img src="/icon-arcade.svg">
                         <div>
                             <p>Arcade</p>
                             <p>$9/mo</p>
@@ -112,8 +112,8 @@
                         </div>
                     </div>
         
-                    <div class="options" onclick="selectE()">
-                        <img src="icon-advanced.svg">
+                    <div class="options" onclick="selectE()" style="background-color: transparent;">
+                        <img src="/icon-advanced.svg">
                         <div>
                             <p>Advanced</p>
                             <p>$12/mo</p>
@@ -121,8 +121,8 @@
                         </div>
                     </div>
         
-                    <div class="options" onclick="selectF()">
-                        <img src="icon-pro.svg">
+                    <div class="options" onclick="selectF()" style="background-color: transparent;">
+                        <img src="/icon-pro.svg">
                         <div>
                             <p>Pro</p>
                             <p>$15/mo</p>
@@ -138,12 +138,12 @@
                     <p>Yearly</p>
                 </div>
                 <div class="pcbottom">
-                    <p>Go Back</p>
-                    <p>Next Step</p>
+                    <p onclick="goback()">Go Back</p>
+                    <p onclick="nextpc() ; return false">Next Step</p>
                 </div>
             </div>
         </div>
 
-        <script src="Step2.js"></script>
+        <script src="/Step2.js"></script>
     </body>
 </html>
