@@ -7,3 +7,8 @@ function change()
 {
     window.location.href="/Step2.html";
 }
+
+function next()
+{
+    window.location.href="/ty.html";
+}

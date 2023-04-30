@@ -144,4 +144,9 @@ app.get("/Step4.html" , function(req,res)
     res.send($.html());
 })
 
+app.get("/ty.html" , function(req,res)
+{
+    res.sendFile(__dirname + "/ty.html");
+})
+
 app.listen(3000);
