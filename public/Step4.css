@@ -101,6 +101,7 @@ body
     margin:15px 15px 15px auto;
     border-radius: 5px;
     cursor: pointer;
+    user-select: none;
 }
 
 .bottombar p:nth-child(1)
