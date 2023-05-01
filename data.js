@@ -130,10 +130,11 @@ app.get("/Step4.html" , function(req,res)
     $("#pcfinal").html("");
     $("#pcmob").html("");
     var tot=mainrate+(rate1*12)+(rate2*12)+(rate3*12);
+    var mtot=mainrate+rate1+rate2+rate3;
     if (tmp=="monthly")
     {
-        $("#pcfinal").html("<p>Total (per month)</p><p>+$" + tot + "/" + "mo");
-        $("#mobfinal").html("<p>Total (per month)</p><p>+$" + tot + "/" + "mo");
+        $("#pcfinal").html("<p>Total (per month)</p><p>+$" + mtot + "/" + "mo");
+        $("#mobfinal").html("<p>Total (per month)</p><p>+$" + mtot + "/" + "mo");
     }
     else 
     {
