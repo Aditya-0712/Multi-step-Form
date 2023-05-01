@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Aditya-0712/Multi-step-Form](https://github.com/Aditya-0712/Multi-step-Form)
-- Live Site URL: [https://aditya-0712.github.io/Multi-step-Form/](https://aditya-0712.github.io/Multi-step-Form/)
+- Live Site URL: [https://www.pbl-eventhub.com/](https://www.pbl-eventhub.com/)
 
 ## My process
 
